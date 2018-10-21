@@ -7,3 +7,7 @@ Calendar
 Calculator
 
 Contacts
+
+Sound Recorder
+
+Camera
