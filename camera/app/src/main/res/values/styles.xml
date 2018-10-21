@@ -1,0 +1,44 @@
+
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <resources xmlns:tools="http://schemas.android.com/tools">
+
+        <style name="BaseActivityTheme" parent="Theme.AppCompat.Light">
+            <item name="android:imageButtonStyle">@style/ImageButtonStyle</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="colorPrimaryDark">@color/primary_dark</item>
+            <item name="colorControlActivated">@color/primary_dark</item>
+            <item name="android:textColorAlertDialogListItem">@color/primary_dark</item>
+            <item name="radioButtonStyle">@style/RoundTouchButton</item>
+            <item name="colorControlNormal">@color/primary_dark</item>
+            <item name="dialogTheme">@style/dialogTheame</item>
+        </style>
+    <style name="ImageButtonStyle" parent="android:Widget.DeviceDefault.ImageButton">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="RoundTouchButton">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#876e3a</item>
+
+    </style>
+<style name="dialogTheame" parent="AlertDialogTheme">
+    <item name="android:textColor">@color/primary_dark</item>
+    <item name="colorButtonNormal">@color/primary_dark</item>
+</style>
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:colorActivatedHighlight">#676767</item>
+        <item name="colorPrimaryDark">#876e3a</item>
+    </style>
+
+</resources>

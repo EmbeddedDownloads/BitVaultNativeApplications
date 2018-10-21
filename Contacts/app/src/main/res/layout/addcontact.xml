@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_hight"
+        android:background="@color/headerColor"
+        android:weightSum="1">
+
+
+        <com.embedded.contacts.utils.BitVaultFont
+            android:id="@+id/back_icon"
+            style="@style/style_font"
+            android:layout_width="@dimen/header_hight"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/close_icon"
+            android:textColor="@color/colorH" />
+
+        <TextView
+            android:id="@+id/header_center_tv"
+            style="@style/style_header_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/new_contact" />
+
+        <TextView
+            android:id="@+id/id_save_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen20"
+            android:paddingRight="@dimen/dimen20"
+            android:text="@string/save"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/id_add_contact_image_rlout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/contact_icon_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/id_add_contact_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@color/colorE"
+                    android:scaleType="centerCrop" />
+
+                <com.embedded.contacts.utils.BitVaultFont
+                    android:id="@+id/id_add_contact_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/user_icon"
+                    android:textColor="@android:color/white"
+                    android:textSize="180sp" />
+
+
+                <com.embedded.contacts.utils.BitVaultFont
+                    android:id="@+id/id_add_contact_take_image_txt"
+                    style="@style/style_camera_txt"
+                    android:layout_width="@dimen/font_width"
+                    android:layout_height="@dimen/font_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="?android:selectableItemBackground" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/contactss"
+                android:layout_width="@dimen/dimen60"
+                android:layout_height="@dimen/dimen60"
+                android:layout_below="@+id/id_add_contact_image_rlout"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/contact_icon"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/securecallicon" />
+            </RelativeLayout>
+
+
+            <Spinner
+                android:id="@+id/contact_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen60"
+                android:layout_below="@+id/id_add_contact_image_rlout"
+                android:layout_marginTop="@dimen/dimen10"
+                android:layout_toRightOf="@+id/contactss"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/name"
+                android:layout_width="@dimen/dimen60"
+                android:layout_height="@dimen/dimen60"
+                android:layout_below="@id/contactss"
+                android:layout_marginTop="@dimen/dimen20">
+
+                <com.embedded.contacts.utils.BitVaultFont
+                    android:id="@+id/name_icon"
+                    style="@style/style_small_font"
+                    android:layout_width="@dimen/font_width"
+                    android:layout_height="@dimen/font_height"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/user_icon" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/contactFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contactss"
+                android:layout_marginRight="@dimen/dimen40"
+                android:layout_marginTop="@dimen/dimen20"
+                android:layout_toRightOf="@+id/name"
+                android:hint="@string/first_name"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/contactLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contactFirstName"
+                android:layout_marginRight="@dimen/dimen40"
+                android:layout_marginTop="@dimen/dimen10"
+                android:layout_toRightOf="@+id/name"
+                android:hint="@string/surname"
+                android:inputType="text"
+                android:maxLines="1" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ph_layout"
+                android:layout_below="@id/contactLastName">
+                <com.embedded.contacts.utils.BitVaultFont
+                    android:id="@+id/id_phone_txt"
+                    style="@style/style_small_font"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dimen10"
+                    android:padding="@dimen/dimen10"
+                    android:text="@string/call_icon"
+                    android:visibility="visible" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/id_phone_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ph_layout">
+                <com.embedded.contacts.utils.BitVaultFont
+                    style="@style/style_small_font"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dimen10"
+                    android:padding="@dimen/dimen10"
+                    android:text="@string/key_icon"
+                    android:visibility="visible" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/id_publickey_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_phone_container"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dimen10" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

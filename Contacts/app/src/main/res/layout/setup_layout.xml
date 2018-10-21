@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen10">
+
+    <TextView
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="wrap_content"
+        android:text="@string/me"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text14" />
+
+    <LinearLayout
+        android:id="@+id/profileLout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen45"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_up_my_profile"
+            android:id="@+id/setUpTxt"
+            android:textSize="@dimen/text18" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen20"
+            android:gravity="center">
+
+            <com.embedded.contacts.ui.CircularImageView
+                android:id="@+id/profileImg"
+                android:layout_width="@dimen/circle_width"
+                android:layout_height="@dimen/circle_height"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dimen5"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/profileImgTxt"
+                android:layout_width="@dimen/circle_width"
+                android:layout_height="@dimen/circle_width"
+                android:layout_marginLeft="@dimen/dimen5"
+                android:gravity="center"
+                android:background="@drawable/contact_circle_view"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text30"
+                android:textAllCaps="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/profileNameTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/font6"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/secureImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/securecallicon"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

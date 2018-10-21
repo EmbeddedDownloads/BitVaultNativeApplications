@@ -1,0 +1,106 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Contacts</string>
+
+    <!-- Icon text-->
+    <string name="search_icon">a</string>
+    <string name="add_contact_icon">b</string>
+    <string name="call_icon">c</string>
+    <string name="key_icon">d</string>
+    <string name="barcode_icon">e</string>
+    <string name="close_icon">f</string>
+    <string name="camera_icon">g</string>
+    <string name="delete_icon">h</string>
+    <string name="msg_icon">i</string>
+    <string name="edit_icon">j</string>
+    <string name="user_icon">k</string>
+    <string name="back_icon">l</string>
+
+
+    <!-- Add Contact-->
+    <string name="new_contact">Create New Contact</string>
+    <string name="edit_contact">Edit Contact</string>
+    <string name="first_name">First Name</string>
+    <string name="surname">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="save">Save</string>
+    <string name="empty_phone">Contact is empty</string>
+
+    <array name="phoneType">
+        <item>Mobile</item>
+        <item>Home</item>
+        <item>Work</item>
+        <item>Main</item>
+        <item>Custom</item>
+    </array>
+
+    <!--List contact-->
+    <string name="me">ME</string>
+    <string name="set_up_my_profile">Set up my profile</string>
+    <string name="my_profile">My Profile</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="delete_this_contact">Delete this contact?</string>
+    <string name="public_key">Public Key</string>
+    <string name="fetching_contacts">Fetching contacts…</string>
+    <string name="contact">Contact</string>
+
+    <!--Color-->
+    <string name="red">#B8cc2121</string>
+    <string name="blue">#CC1E88E5</string>
+    <string name="green">#CC26A69A</string>
+    <string name="purple">#889C27B0</string>
+    <string name="CYAN">#CC699A30</string>
+    <string name="magenta">#88C51162</string>
+
+
+    <string name="export">Export</string>
+    <string name="imports">Import</string>
+    <string name="cancel" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="take_photo">Take photo</string>
+    <string name="remove_photo">Remove photo</string>
+    <string name="change_photo">Change photo</string>
+    <string name="choose_photo">Choose photo</string>
+    <string name="no_contacts">No contacts</string>
+    <string name="image_picker_title">Select source</string>
+    <string name="search_contact">Search Contact</string>
+    <string name="search_secure_contact">Search Secure Contact</string>
+
+    <!--Intent String-->
+    <string name="intent_delete">delete</string>
+    <string name="intent_contact_id">contact_id</string>
+    <string name="intent_mobile">mobile</string>
+    <string name="intent_color">color</string>
+    <string name="intent_photo_name">my_pic.jpg</string>
+    <string name="intent_public_key">keyaddress</string>
+    <string name="intent_title">title</string>
+    <string name="intent_edit">edit</string>
+    <string name="intent_code">code</string>
+    <string name="confirm_delete">Confirm Delete</string>
+    <string name="all_contacts">All Contacts</string>
+    <string name="secure_contacts">Secure Contacts</string>
+    <string name="package_secure_msg">com.app.securemessaging</string>
+    <string name="package_secure_cal">org.linphone</string>
+    <string name="permission_already_granted">permission already granted</string>
+    <string name="permission_granted"> permission granted</string>
+    <string name="permission_not_granted">permission not granted</string>
+    <string name="MyContact">MyContact</string>
+    <string name="contact_ID_after">contact ID after add in View</string>
+    <string name="contact_id_in_object">contact id in object:</string>
+    <string name="contact_ID_in_View">" contact ID in View "</string>
+    <string name="name">name</string>
+    <string name="mimetype">mimetype</string>
+    <string name="file_deleted">file deleted</string>
+    <string name="public_key_not_valid">Public key not valid</string>
+    <string name="xiaomi">Xiaomi</string>
+
+    <string name="data">data</string>
+    <string name="bitcoin">"bitcoin:"</string>
+    <string name="not_valid_public_key">not valid public key</string>
+    <string name="app_not_found">App not found</string>
+    <string name="disableDeathOnFileUriExposure">disableDeathOnFileUriExposure</string>
+    <string name="calling_hideDefaultKeyboard">Calling hideDefaultKeyboard</string>
+    <string name="software_Keyboard_was_shown">Software Keyboard was shown</string>
+    <string name="software_keyboard_was_not_shown">Software Keyboard was not shown</string>
+    <string name="saveContactByMessaging">saveContactByMessaging</string>
+    <string name="Contacts_already_exists">Contacts already exists : </string>
+</resources>

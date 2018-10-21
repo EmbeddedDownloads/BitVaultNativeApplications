@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    defaultConfig {
+        applicationId "net.sourceforge.opencamera"
+        minSdkVersion 21
+        targetSdkVersion 25
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+        storycamrelease {
+            minSdkVersion 21
+            applicationId 'org.storymaker.camera'
+            targetSdkVersion 22
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:25.0.1'
+    compile 'com.github.japgolly.android:svg-android:2.0.6'
+    compile 'com.googlecode.mp4parser:isoparser:1.1.9'
+   /* compile 'net.hockeyapp.android:HockeySDK:3.6.0'*/
+    compile 'com.mpatric:mp3agic:0.8.3'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+}

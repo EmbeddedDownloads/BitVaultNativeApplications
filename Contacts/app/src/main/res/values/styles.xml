@@ -1,0 +1,116 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionButtonStyle">@style/ActionButtonStyle</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/listselector</item>
+        <item name="android:fastScrollOverlayPosition">atThumb</item>
+        <item name="android:fastScrollTextColor">@color/colorH</item>
+        <item name="android:fastScrollTrackDrawable">@drawable/track_drawable</item>
+    </style>
+
+
+    <style name="ActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorH</item>
+        <item name="android:actionButtonStyle">@style/ActionButtonStyle</item>
+    </style>
+
+    <style name="AddContactTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionButtonStyle">@style/ActionButtonStyle</item>
+    </style>
+
+    <style name="ActionButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:minWidth">0dip</item>
+        <item name="android:paddingStart">0dip</item>
+        <item name="android:paddingEnd">10dip</item>
+    </style>
+
+    <style name="style_header_txt">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorH</item>
+    </style>
+
+    <style name="style_camera_txt">
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:text">@string/camera_icon</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="font5" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorC</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="font6" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorC</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="font9" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/colorC</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!--List Contact-->
+    <style name="style_search_btn">
+        <item name="android:layout_margin">@dimen/dimen10</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">@string/search_icon</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+
+    <style name="style_dialog_btn">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="style_delete_contact">
+        <item name="android:layout_marginTop">@dimen/dimen20</item>
+        <item name="android:layout_marginBottom">@dimen/dimen30</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorB</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="style_confirm_delete">
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+        <item name="android:layout_marginBottom">@dimen/dimen1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorB</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="style_contact_button">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorH</item>
+        <item name="android:textSize">@dimen/text14</item>
+    </style>
+
+    <style name="style_font">
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="style_small_font">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

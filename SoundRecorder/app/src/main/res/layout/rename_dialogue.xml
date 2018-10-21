@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:padding="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="@dimen/card_padding"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="@string/dialog_title_rename" />
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/card_padding">
+
+        <EditText
+            android:id="@+id/new_name"
+            android:layout_weight="1"
+            android:maxLength="30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text=".mp3"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/round_button_shape"
+            android:id="@+id/btn_cancel"
+            android:text="Cancel"
+            android:textColor="@color/dialogue_btn_txt_clr"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/dialogue_btn_txt_clr"
+            android:gravity="center"
+            android:background="@drawable/rounded_green"
+            android:id="@+id/btn_ok"
+            android:text="Ok" />
+
+    </LinearLayout>
+
+</LinearLayout>

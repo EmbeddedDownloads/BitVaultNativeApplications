@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/dimen10"
+    android:layout_marginTop="@dimen/dimen10"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/id_publickey_edt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/public_key"
+        android:inputType="text"
+        android:maxLength="34"
+        android:maxLines="1" />
+
+    <RelativeLayout
+        android:id="@+id/mBarCodeRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.embedded.contacts.utils.BitVaultFont
+            android:id="@+id/id_publickey_barcodeTxt"
+            style="@style/style_small_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/barcode_icon"
+            android:background="?android:selectableItemBackground"
+            android:padding="@dimen/dimen10"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <com.embedded.contacts.utils.BitVaultFont
+        android:id="@+id/id_publickey_close"
+        style="@style/style_small_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen10"
+        android:visibility="invisible"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/close_icon" />
+
+</LinearLayout>

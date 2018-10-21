@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edt_text_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/dimen10">
+
+    <TextView
+        style="@style/style_confirm_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_delete"
+        android:textStyle="bold"/>
+
+    <TextView
+        style="@style/style_delete_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/delete_this_contact"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/circle_width"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            style="@style/style_dialog_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dimen5"
+            android:background="@color/colorE"
+            android:id="@+id/id_dialog_no"
+            android:text="@string/no" />
+
+        <TextView
+            style="@style/style_dialog_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen5"
+            android:background="@color/colorA"
+            android:id="@+id/id_dialog_yes"
+            android:text="@string/yes" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="file_length_text">12sp</dimen>
+    <dimen name="file_name_text">15sp</dimen>
+    <dimen name="file_date_added_text">12sp</dimen>
+    <dimen name="card_margins">7dp</dimen>
+    <dimen name="card_padding">10dp</dimen>
+<dimen name="text_size">18sp</dimen>
+    <dimen name="tab_indicator_height">5dp</dimen>
+</resources>
