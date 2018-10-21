@@ -1,4 +1,9 @@
 # BitVault Native Applications
 
-Clock 
+Clock
+
 Calendar
+
+Calculator
+
+Contacts
